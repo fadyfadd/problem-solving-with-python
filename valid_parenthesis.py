@@ -20,14 +20,12 @@ class solution:
             else:
                 
                 if (len(stk)==0): 
-                    return False; 
-                
-                value = stk.pop()   
-                u=brackets[value]                
-                if (brackets[value] != br):
-                    return False; 
+                    return False              
+                           
+                if (brackets[stk.pop()] != br):
+                    return False
 
-        return len(stk)==0; 
+        return len(stk)==0 
 
 
 print(solution().isValid("{}")) #True
