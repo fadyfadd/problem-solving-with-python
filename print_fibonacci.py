@@ -1,8 +1,6 @@
 class solution:
 
-    def printFibonacci(self , nbr:int):
-        a_1:int
-        a_2:int
+    def printFibonacci(self , nbr):      
         a_1 = 0
         a_2 = 1
         sum:int = a_1 + a_2

@@ -1,6 +1,6 @@
 class solution:
 
-    def isValid(self , s:str):
+    def isValid(self , s):
         
         if (len(s)==0):
             return True
