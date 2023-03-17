@@ -1,6 +1,4 @@
-class Solution:
-
-    def longuest_common_prefix(self , strings):
+def longuest_common_prefix(strings):
         result = ""
         strings.sort(); 
         i = 0
@@ -10,7 +8,6 @@ class Solution:
 
         return result 
 
-
-print(Solution().longuest_common_prefix(["fadyfadd" , "fady faddoul" , "fady_faddoul@hotmail.com"])) #fady
-print(Solution().longuest_common_prefix([""])) #
-print(Solution().longuest_common_prefix(["fadyfadd"])) #fadyfadd
+print(longuest_common_prefix(["fadyfadd" , "fady faddoul" , "fady_faddoul@hotmail.com"])) #fady
+print(longuest_common_prefix([""])) #
+print(longuest_common_prefix(["fadyfadd"])) #fadyfadd

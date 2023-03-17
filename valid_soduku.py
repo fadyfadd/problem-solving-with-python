@@ -1,5 +1,5 @@
-class Solution:
-    def valid_3x3_matrix(self , matrix  ,a ,b):
+
+def valid_3x3_matrix( matrix  ,a ,b):
         lookup = dict()
         y = a
         x = b
@@ -16,7 +16,7 @@ class Solution:
             y=y+1
         return True
     
-    def valid_9x9_matrix_rows(self , matrix , a , b):
+def valid_9x9_matrix_rows( matrix , a , b):
         lookup = dict()
         y = a
         x = b
@@ -34,7 +34,7 @@ class Solution:
 
         return True
         
-    def valid_9x9_matrix_columns(self , matrix , a , b):
+def valid_9x9_matrix_columns(matrix , a , b):
         lookup = dict()
         y = a
         x = b
@@ -53,60 +53,60 @@ class Solution:
 
         return True
 
-    def is_valid_soduku(self , matrix):
+def is_valid_soduku(matrix):
         
-        if (self.valid_9x9_matrix_columns(matrix, 0, 0) == False):
+        if (valid_9x9_matrix_columns(matrix, 0, 0) == False):
             return False 
         
-        if (self.valid_9x9_matrix_rows(matrix, 0, 0) == False):
+        if (valid_9x9_matrix_rows(matrix, 0, 0) == False):
             return False 
 
-        if (self.valid_3x3_matrix(matrix, 0, 0) == False):
+        if (valid_3x3_matrix(matrix, 0, 0) == False):
             return False 
 
-        if (self.valid_3x3_matrix(matrix, 0, 3) == False):
+        if (valid_3x3_matrix(matrix, 0, 3) == False):
             return False 
 
-        if (self.valid_3x3_matrix(matrix, 0, 6) == False):
+        if (valid_3x3_matrix(matrix, 0, 6) == False):
             return False
 
-        if (self.valid_3x3_matrix(matrix, 3, 0) == False):
+        if (valid_3x3_matrix(matrix, 3, 0) == False):
             return False
 
-        if (self.valid_3x3_matrix(matrix, 3, 3) == False):
+        if (valid_3x3_matrix(matrix, 3, 3) == False):
             return False
 
-        if (self.valid_3x3_matrix(matrix , 3, 6) == False):
+        if (valid_3x3_matrix(matrix , 3, 6) == False):
             return False
  
-        if (self.valid_3x3_matrix(matrix, 6, 0) == False):
+        if (valid_3x3_matrix(matrix, 6, 0) == False):
             return False
             
-        if (self.valid_3x3_matrix(matrix,  6, 3) == False):
+        if (valid_3x3_matrix(matrix,  6, 3) == False):
             return False 
 
-        if (self.valid_3x3_matrix(matrix, 6, 6) == False):
+        if (valid_3x3_matrix(matrix, 6, 6) == False):
             return False       
 
         return True
 
-print(Solution().is_valid_soduku([["5","3",".",".","7",".",".",".","."],
-                                  ["6",".",".","1","9","5",".",".","."],
-                                  [".","9","8",".",".",".",".","6","."],
-                                  ["8",".",".",".","6",".",".",".","3"],
-                                  ["4",".",".","8",".","3",".",".","1"],
-                                  ["7",".",".",".","2",".",".",".","6"],
-                                  [".","6",".",".",".",".","2","8","."],
-                                  [".",".",".","4","1","9",".",".","5"],
-                                  [".",".",".",".","8",".",".","7","9"]])) #True
+print(is_valid_soduku([["5","3",".",".","7",".",".",".","."],
+                       ["6",".",".","1","9","5",".",".","."],
+                       [".","9","8",".",".",".",".","6","."],
+                       ["8",".",".",".","6",".",".",".","3"],
+                       ["4",".",".","8",".","3",".",".","1"],
+                       ["7",".",".",".","2",".",".",".","6"],
+                       [".","6",".",".",".",".","2","8","."],
+                       [".",".",".","4","1","9",".",".","5"],
+                       [".",".",".",".","8",".",".","7","9"]])) #True
 
-print(Solution().is_valid_soduku([[".",".","4",".",".",".","6","3","."],
-                                  [".",".",".",".",".",".",".",".","."],
-                                  ["5",".",".",".",".",".",".","9","."],
-                                  [".",".",".","5","6",".",".",".","."],
-                                  ["4",".","3",".",".",".",".",".","1"],
-                                  [".",".",".","7",".",".",".",".","."],
-                                  [".",".",".","5",".",".",".",".","."],
-                                  [".",".",".",".",".",".",".",".","."],
-                                  [".",".",".",".",".",".",".",".","."]])) #False
+print(is_valid_soduku([[".",".","4",".",".",".","6","3","."],
+                       [".",".",".",".",".",".",".",".","."],
+                       ["5",".",".",".",".",".",".","9","."],
+                       [".",".",".","5","6",".",".",".","."],
+                       ["4",".","3",".",".",".",".",".","1"],
+                       [".",".",".","7",".",".",".",".","."],
+                       [".",".",".","5",".",".",".",".","."],
+                       [".",".",".",".",".",".",".",".","."],
+                       [".",".",".",".",".",".",".",".","."]])) #False
       

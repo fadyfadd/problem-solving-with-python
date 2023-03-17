@@ -1,6 +1,4 @@
-class Solution:
-
-    def add_2_strings(self , nbr1  , nbr2 ):
+def add_2_strings(nbr1  , nbr2 ):
         stk = []
         value = ""
         retain=0
@@ -28,6 +26,6 @@ class Solution:
         return value
 
 
-print(Solution().add_2_strings("9" , "1")) #10
-print(Solution().add_2_strings("9" , "101")) #110
-print(Solution().add_2_strings("99" , "2")) #101
+print(add_2_strings("9" , "1")) #10
+print(add_2_strings("9" , "101")) #110
+print(add_2_strings("99" , "2")) #101
