@@ -65,11 +65,8 @@ class Solution:
         if (self.valid_3x3_matrix(matrix, 0, 0) == False):
             return False 
 
-        if (self.valid_3x3_matrix(matrix, 0, 0) == False):
-            return False 
-
         if (self.valid_3x3_matrix(matrix, 0, 3) == False):
-            return False
+            return False 
 
         if (self.valid_3x3_matrix(matrix, 0, 6) == False):
             return False
@@ -77,12 +74,12 @@ class Solution:
         if (self.valid_3x3_matrix(matrix, 3, 0) == False):
             return False
 
-        if (self.valid_3x3_matrix(matrix , 3, 3) == False):
+        if (self.valid_3x3_matrix(matrix, 3, 3) == False):
             return False
 
-        if (self.ValideMatrix(matrix, 3, 6) == False):
+        if (self.valid_3x3_matrix(matrix , 3, 6) == False):
             return False
-
+ 
         if (self.valid_3x3_matrix(matrix, 6, 0) == False):
             return False
             
