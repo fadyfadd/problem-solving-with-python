@@ -1,5 +1,5 @@
-class solution:
-    def maxProfit(self , prices):
+class Solution:
+    def Max_Profit(self , prices):
         max_profit = 0
         min_price = float('inf')
 
@@ -11,8 +11,8 @@ class solution:
         return max_profit
 
 
-print(solution().maxProfit([7,1,5,3,6,4])) #5
-print(solution().maxProfit([7,6,5,4,3,1])) #0
-print(solution().maxProfit([1,2,3,4])) #3
-print(solution().maxProfit([1])) #0
-print(solution().maxProfit([])) #0
+print(Solution().maxProfit([7,1,5,3,6,4])) #5
+print(Solution().maxProfit([7,6,5,4,3,1])) #0
+print(Solution().maxProfit([1,2,3,4])) #3
+print(Solution().maxProfit([1])) #0
+print(Solution().maxProfit([])) #0

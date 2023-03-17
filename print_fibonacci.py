@@ -1,6 +1,6 @@
-class solution:
+class Solution:
 
-    def printFibonacci(self , nbr):      
+    def Print_Fibonacci(self , nbr):      
         a_1 = 0
         a_2 = 1
         sum:int = a_1 + a_2
@@ -10,7 +10,7 @@ class solution:
             a_2 = sum
             sum = a_1 + a_2
 
-solution().printFibonacci(10)
+Solution().printFibonacci(10)
 
             
         

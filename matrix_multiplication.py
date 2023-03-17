@@ -1,4 +1,4 @@
-class solution:
+class Solution:
     def multiply(self , matrix1 , matrix2) -> int:
         result = []
         
@@ -12,6 +12,6 @@ class solution:
             result.append(row)
         return result       
 
-print(solution().multiply([[1,2,3,8]],[[1,2],[1,2],[1,2],[1,2]])) #[14,28]
+print(Solution().multiply([[1,2,3,8]],[[1,2],[1,2],[1,2],[1,2]])) #[14,28]
 
            

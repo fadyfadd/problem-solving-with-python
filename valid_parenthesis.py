@@ -1,6 +1,6 @@
-class solution:
+class Solution:
 
-    def isValid(self , s):
+    def is_valid(self , s):
         
         if (len(s)==0):
             return True
@@ -28,11 +28,11 @@ class solution:
         return len(stk)==0 
 
 
-print(solution().isValid("{}")) #True
-print(solution().isValid("{[()()]}")) #True
-print(solution().isValid("{")) #False
-print(solution().isValid("")) #True
-print(solution().isValid("{[()()]")) #False
-print(solution().isValid("{[())]")) #False
+print(Solution().isValid("{}")) #True
+print(Solution().isValid("{[()()]}")) #True
+print(Solution().isValid("{")) #False
+print(Solution().isValid("")) #True
+print(Solution().isValid("{[()()]")) #False
+print(Solution().isValid("{[())]")) #False
 
  
