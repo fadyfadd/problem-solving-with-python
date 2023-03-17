@@ -1,8 +1,8 @@
 def multiply(matrix1 , matrix2) -> int:
-        result = []
+        result = list()
         
         for i in range(0 , len(matrix1)):
-            row=[]
+            row=list()
             for j in range (0 , len(matrix2[0])):               
                 cumule:int = 0
                 for k in range(0,len(matrix2)):

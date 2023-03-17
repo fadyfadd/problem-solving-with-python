@@ -1,5 +1,5 @@
 def add_2_strings(nbr1  , nbr2 ):
-        stk = []
+        stk = list()
         value = ""
         retain=0
          
