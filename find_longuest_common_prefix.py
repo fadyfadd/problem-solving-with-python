@@ -1,4 +1,4 @@
-def longuest_common_prefix(strings):
+def find_longuest_common_prefix(strings):
         result = ""
         strings.sort(); 
         i = 0
@@ -8,6 +8,6 @@ def longuest_common_prefix(strings):
 
         return result 
 
-print(longuest_common_prefix(["fadyfadd" , "fady faddoul" , "fady_faddoul@hotmail.com"])) #fady
-print(longuest_common_prefix([""])) #
-print(longuest_common_prefix(["fadyfadd"])) #fadyfadd
+print(find_longuest_common_prefix(["fadyfadd" , "fady faddoul" , "fady_faddoul@hotmail.com"])) #fady
+print(find_longuest_common_prefix([""])) #
+print(find_longuest_common_prefix(["fadyfadd"])) #fadyfadd

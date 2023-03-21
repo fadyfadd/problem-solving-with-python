@@ -1,5 +1,5 @@
 
-def valid_3x3_matrix( matrix  ,a ,b):
+def is_valid_3x3_matrix( matrix  ,a ,b):
         lookup = dict()
         y = a
         x = b
@@ -16,7 +16,7 @@ def valid_3x3_matrix( matrix  ,a ,b):
             y=y+1
         return True
     
-def valid_9x9_matrix_rows( matrix , a , b):
+def is_valid_9x9_matrix_rows( matrix , a , b):
         lookup = dict()
         y = a
         x = b
@@ -58,34 +58,34 @@ def is_valid_soduku(matrix):
         if (valid_9x9_matrix_columns(matrix, 0, 0) == False):
             return False 
         
-        if (valid_9x9_matrix_rows(matrix, 0, 0) == False):
+        if (is_valid_9x9_matrix_rows(matrix, 0, 0) == False):
             return False 
 
-        if (valid_3x3_matrix(matrix, 0, 0) == False):
+        if (is_valid_3x3_matrix(matrix, 0, 0) == False):
             return False 
 
-        if (valid_3x3_matrix(matrix, 0, 3) == False):
+        if (is_valid_3x3_matrix(matrix, 0, 3) == False):
             return False 
 
-        if (valid_3x3_matrix(matrix, 0, 6) == False):
+        if (is_valid_3x3_matrix(matrix, 0, 6) == False):
             return False
 
-        if (valid_3x3_matrix(matrix, 3, 0) == False):
+        if (is_valid_3x3_matrix(matrix, 3, 0) == False):
             return False
 
-        if (valid_3x3_matrix(matrix, 3, 3) == False):
+        if (is_valid_3x3_matrix(matrix, 3, 3) == False):
             return False
 
-        if (valid_3x3_matrix(matrix , 3, 6) == False):
+        if (is_valid_3x3_matrix(matrix , 3, 6) == False):
             return False
  
-        if (valid_3x3_matrix(matrix, 6, 0) == False):
+        if (is_valid_3x3_matrix(matrix, 6, 0) == False):
             return False
             
-        if (valid_3x3_matrix(matrix,  6, 3) == False):
+        if (is_valid_3x3_matrix(matrix,  6, 3) == False):
             return False 
 
-        if (valid_3x3_matrix(matrix, 6, 6) == False):
+        if (is_valid_3x3_matrix(matrix, 6, 6) == False):
             return False       
 
         return True
