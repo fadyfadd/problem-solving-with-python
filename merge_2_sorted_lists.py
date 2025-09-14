@@ -3,7 +3,7 @@ class ListNode(object):
          self.val = val
          self.next = next
 
-def mergeTwoLists(self, list1, list2):
+def merge_two_lists(list1, list2):
             head=ListNode()
             last=head
 
@@ -31,3 +31,12 @@ def mergeTwoLists(self, list1, list2):
                     list2_pointer = list2_pointer.next
 
             return head.next
+
+
+
+a = ListNode(1, ListNode(3, ListNode(5)))
+b = ListNode(2, ListNode(4, ListNode(6)))
+merged = merge_two_lists(a, b)
+while merged:
+     print(merged.val, end=" -> ")
+     merged = merged.next

@@ -4,5 +4,6 @@ def is_perfect_square(num) -> bool:
             value = value+1
         print (value*value)
         return value*value==num
-is_perfect_square(16)
+
+print(is_perfect_square(16))
     

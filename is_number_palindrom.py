@@ -1,4 +1,4 @@
-def is_palindrom(x):
+def is_number_palindrom(x):
     y = x
     value=0
     while (y != 0):
@@ -6,4 +6,4 @@ def is_palindrom(x):
             y=int(y/10)
     return x==value
 
-is_palindrom(121)
+print(is_number_palindrom(121))
