@@ -87,4 +87,4 @@ g.add_edge("A", "B", 1)
 g.add_edge("B", "C", 2)
 d = Dijkstra()
 d.dijkstra_path("A", "C", g)
-print(d.path, d.shortest_distance)
+print(d.path, d.shortest_distance) #['A', 'B', 'C']
