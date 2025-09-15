@@ -31,4 +31,4 @@ root.left = TreeNode(2)
 root.right = TreeNode(3)
 root.left.left = TreeNode(4)
 
-print("Minimum depth:", min_depth(root))  # 2
+print(min_depth(root))  # 2
